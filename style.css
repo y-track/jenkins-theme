@@ -44,6 +44,7 @@
     height: 40px
 }
 
+
 #jenkins-name-icon {
     display: none;
 }
@@ -57,7 +58,7 @@
     color: white !important;
 }
 
-#breadcrumbs a {
+#breadcrumbs a, footer a {
     color: white !important;
 }
 
@@ -67,4 +68,17 @@
 
 #breadcrumbs LI:hover {
     background-color: white !important;
+}
+
+.login a {
+    color: #3D4C55 !important;
+}
+
+#search-box {
+    box-shadow: none !important;
+}
+
+footer {
+    background-color: #E33139;
+    color: white;
 }
