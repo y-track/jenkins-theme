@@ -33,3 +33,38 @@
 .job-status-nobuilt td:first-of-type::before {
   background-color: grey;
 }
+
+
+#jenkins-head-icon {
+    height: 40px;
+}
+
+#header {
+    background-color: #FDFDFD;
+    height: 40px
+}
+
+#jenkins-name-icon {
+    display: none;
+}
+
+.top-sticker-inner {
+    background-color: #E33139;
+}
+
+#breadcrumbs {
+    border: none;
+    color: white;
+}
+
+#breadcrumbs a {
+    color: white;
+}
+
+#breadcrumbs a:hover {
+    color: #505A63;
+}
+
+#breadcrumbs LI:hover {
+    background-color: white;
+}
