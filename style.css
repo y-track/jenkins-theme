@@ -1,0 +1,35 @@
+.job-status-red td,
+.job-status-blue td,
+.job-status-disabled td,
+.job-status-nobuilt td {
+  position: relative;
+}
+
+.job-status-red td:first-of-type img,
+.job-status-blue td:first-of-type img,
+.job-status-disabled td:first-of-type img,
+.job-status-nobuilt td:first-of-type img {
+  display: none
+}
+
+.job-status-red td:first-of-type::before,
+.job-status-blue td:first-of-type::before,
+.job-status-disabled td:first-of-type::before,
+.job-status-nobuilt td:first-of-type::before {
+  content: "";
+  background-color: red;
+  position: absolute;
+  width: 7px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.job-status-blue td:first-of-type::before {
+  background-color: green;
+}
+
+.job-status-disabled td:first-of-type::before,
+.job-status-nobuilt td:first-of-type::before {
+  background-color: grey;
+}
