@@ -53,18 +53,18 @@
 }
 
 #breadcrumbs {
-    border: none;
-    color: white;
+    border: none !important;
+    color: white !important;
 }
 
 #breadcrumbs a {
-    color: white;
+    color: white !important;
 }
 
 #breadcrumbs a:hover {
-    color: #505A63;
+    color: #505A63 !important;
 }
 
 #breadcrumbs LI:hover {
-    background-color: white;
+    background-color: white !important;
 }
