@@ -1,21 +1,33 @@
 .job-status-red td,
 .job-status-blue td,
 .job-status-disabled td,
-.job-status-nobuilt td {
+.job-status-nobuilt td,
+.job-status-red-anime td,
+.job-status-blue-anime td,
+.job-status-disabled-anime td,
+.job-status-nobuilt-anime td {
   position: relative;
 }
 
 .job-status-red td:first-of-type img,
 .job-status-blue td:first-of-type img,
 .job-status-disabled td:first-of-type img,
-.job-status-nobuilt td:first-of-type img {
+.job-status-nobuilt td:first-of-type img,
+.job-status-red-anime td:first-of-type img,
+.job-status-blue-anime td:first-of-type img,
+.job-status-disabled-anime td:first-of-type img,
+.job-status-nobuilt-anime td:first-of-type img {
   display: none
 }
 
 .job-status-red td:first-of-type::before,
 .job-status-blue td:first-of-type::before,
 .job-status-disabled td:first-of-type::before,
-.job-status-nobuilt td:first-of-type::before {
+.job-status-nobuilt td:first-of-type::before,
+.job-status-red-anime td:first-of-type::before,
+.job-status-blue-anime td:first-of-type::before,
+.job-status-disabled-anime td:first-of-type::before,
+.job-status-nobuilt-anime td:first-of-type::before {
   content: "";
   background-color: red;
   position: absolute;
@@ -23,6 +35,19 @@
   top: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.job-status-red-anime td:first-of-type::before,
+.job-status-blue-anime td:first-of-type::before,
+.job-status-disabled-anime td:first-of-type::before,
+.job-status-nobuilt-anime td:first-of-type::before {
+    animation: heartbeat 1s ease-in infinite;
+}
+
+@keyframes heartbeat{
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
 }
 
 .job-status-blue td:first-of-type::before {
