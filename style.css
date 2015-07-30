@@ -30,6 +30,7 @@ a:hover {
     font-style: normal;
     font-weight: normal;
     speak: none;
+    font-size: 1.6em;
 
     display: inline-block;
     text-decoration: inherit;
@@ -65,6 +66,10 @@ a:hover {
 .task-icon-link[href='/me/my-views']::before { content: '\e80c'; } /* '' */
 .task-icon-link[href='/projectRelationship']::before { content: '\e80d'; } /* '' */
 .task-icon-link[href='/fingerprintCheck']::before { content: '\e80e'; } /* '' */
+
+.task-icon-link[href='/']::before { content: '\e800'; } /* '' */
+.task-icon-link[href$='/job/']::before { content: '\e801'; } /* '' */
+.task-icon-link[href^='/changes']::before { content: '\e809'; } /* '' */
 
 .job-status-red td,
 .job-status-blue td,
