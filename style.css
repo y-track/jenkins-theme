@@ -9,8 +9,20 @@
   font-style: normal;
 }
 
+a, a:visited {
+    text-decoration: none !important;
+    color: #3C4C55 !important;
+}
+a:hover {
+    text-decoration: underline !important;
+}
+
 .task-icon-link img {
-  display: none;
+    display: none;
+}
+
+.task-icon-link:hover:before {
+    text-decoration: none !important;
 }
 
 .task-icon-link::before {
@@ -46,7 +58,7 @@
 }
 
 .task-icon-link[href='/view/All/newJob']::before { content: '\e807'; }
-.task-icon-link[href='/asynchPeople']::before { content: '\e808'; } /* '' */
+.task-icon-link[href='/asynchPeople/']::before { content: '\e808'; } /* '' */
 .task-icon-link[href='/view/All/builds']::before { content: '\e809'; } /* '' */
 .task-icon-link[href='/manage']::before { content: '\e80a'; } /* '' */
 .task-icon-link[href='/credential-store']::before { content: '\e80b'; } /* '' */
