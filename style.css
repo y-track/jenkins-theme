@@ -17,6 +17,7 @@ a:hover {
     text-decoration: underline !important;
 }
 
+.task>a:first-of-type[href='#'] img,
 .task-icon-link img {
     display: none;
 }
@@ -25,6 +26,7 @@ a:hover {
     text-decoration: none !important;
 }
 
+.task>a:first-of-type[href='#']::before,
 .task-icon-link::before {
     font-family: "fontello";
     font-style: normal;
@@ -68,8 +70,13 @@ a:hover {
 .task-icon-link[href='/fingerprintCheck']::before { content: '\e80e'; } /* '' */
 
 .task-icon-link[href='/']::before { content: '\e800'; } /* '' */
-.task-icon-link[href$='/job/']::before { content: '\e801'; } /* '' */
-.task-icon-link[href^='/changes']::before { content: '\e809'; } /* '' */
+.task-icon-link[href^='/job/']::before { content: '\e801'; } /* '' */
+.task-icon-link[href$='/changes']::before { content: '\e809'; } /* '' */
+.task-icon-link[href$='/scmPollLog']::before { content: '\e806'; } /* '' */
+.task-icon-link[href$='/ws/']::before { content: '\e802'; } /* '' */
+.task-icon-link[href$='/build?delay=0sec']::before { content: '\e803'; } /* '' */
+.task-icon-link[href$='/configure']::before { content: '\e80a'; } /* '' */
+.task>a:first-of-type[href='#']::before { content: '\e804'; }
 
 .job-status-red td,
 .job-status-blue td,
