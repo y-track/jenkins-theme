@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
     var icon = document.querySelector('#jenkins-head-icon');
-    icon.src = 'http://paulvarache.github.io/jenkins-theme/images/dmp-logo.png';
+    icon.src = 'images/dmp-logo.png';
 });
