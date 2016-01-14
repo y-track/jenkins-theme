@@ -70,33 +70,45 @@ a:hover {
 
 .job-status-red td,
 .job-status-blue td,
+.job-status-yellow td,
 .job-status-disabled td,
+.job-status-aborted td,
 .job-status-nobuilt td,
 .job-status-red-anime td,
 .job-status-blue-anime td,
+.job-status-yellow-anime td,
 .job-status-disabled-anime td,
+.job-status-aborted-anime td,
 .job-status-nobuilt-anime td {
   position: relative;
 }
 
 .job-status-red td:first-of-type img,
 .job-status-blue td:first-of-type img,
+.job-status-yellow td:first-of-type img,
 .job-status-disabled td:first-of-type img,
+.job-status-aborted td:first-of-type img,
 .job-status-nobuilt td:first-of-type img,
 .job-status-red-anime td:first-of-type img,
 .job-status-blue-anime td:first-of-type img,
+.job-status-yellow-anime td:first-of-type img,
 .job-status-disabled-anime td:first-of-type img,
+.job-status-aborted-anime td:first-of-type img,
 .job-status-nobuilt-anime td:first-of-type img {
   display: none
 }
 
 .job-status-red td:first-of-type::before,
 .job-status-blue td:first-of-type::before,
+.job-status-yellow td:first-of-type::before,
 .job-status-disabled td:first-of-type::before,
+.job-status-aborted td:first-of-type::before,
 .job-status-nobuilt td:first-of-type::before,
 .job-status-red-anime td:first-of-type::before,
 .job-status-blue-anime td:first-of-type::before,
+.job-status-yellow-anime td:first-of-type::before,
 .job-status-disabled-anime td:first-of-type::before,
+.job-status-aborted-anime td:first-of-type::before,
 .job-status-nobuilt-anime td:first-of-type::before {
   content: "";
   background-color: red;
@@ -109,7 +121,9 @@ a:hover {
 
 .job-status-red-anime td:first-of-type::before,
 .job-status-blue-anime td:first-of-type::before,
+.job-status-yellow-anime td:first-of-type::before,
 .job-status-disabled-anime td:first-of-type::before,
+.job-status-aborted-anime td:first-of-type::before,
 .job-status-nobuilt-anime td:first-of-type::before {
     -webkit-animation: heartbeat 1s ease-in infinite;
     -moz-animation: heartbeat 1s ease-in infinite;
@@ -145,11 +159,18 @@ a:hover {
   background-color: green;
 }
 
+.job-status-yellow td:first-of-type::before {
+  background-color: yellow;
+}
+
 .job-status-disabled td:first-of-type::before,
 .job-status-nobuilt td:first-of-type::before {
   background-color: grey;
 }
 
+.job-status-aborted td:first-of-type::before {
+  background-color: lightgrey;
+}
 
 #jenkins-head-icon {
     height: 40px;
